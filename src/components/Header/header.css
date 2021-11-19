@@ -1,0 +1,26 @@
+.header{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-filter{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.select-filter{
+    width: 85%;
+}
+
+.header-filter span{
+    color: #929292;
+    font-size: 0.8rem;
+}
+
+.header-title{
+    font-weight: 700;
+}
