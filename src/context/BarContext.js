@@ -32,7 +32,7 @@ export function BarProvider({ children }) {
         // Matches each user with their albums
         const tempAlbums = users.map(user => {
             let tempUser = {};
-            tempUser['user'] = user.email;
+            tempUser['user'] = user.email.split('@')[0]
             albums.forEach(album => {
                 if (album.userId === user.id) {
                     tempUser[album.title] = albumCache[album.id]
