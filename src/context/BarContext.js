@@ -61,7 +61,7 @@ export function BarProvider({ children }) {
     useEffect(() => {
         // Will be called with every change in selectedOption
         filterAlbums()
-    }, [selectedOption, filterAlbums])
+    }, [selectedOption])
 
     const filterAlbums = () => {
         // If selectedOption is empty we can set filteredBarData back to the original state
