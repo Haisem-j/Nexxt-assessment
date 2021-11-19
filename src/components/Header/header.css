@@ -1,26 +1,48 @@
-.header{
+.header {
     height: 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-filter{
+.header-filter {
     width: 50%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.select-filter{
+.select-filter {
     width: 85%;
 }
 
-.header-filter span{
-    color: #929292;
+.header-title {
     font-size: 0.8rem;
 }
 
-.header-title{
+.header-filter span {
+    color: #929292;
+    font-size: 0.6rem;
+}
+
+.header-title {
     font-weight: 700;
+}
+
+@media only screen and (min-width: 600px) {
+    .header-title {
+        font-size: 1rem;
+    }
+
+    .header-filter span {
+        font-size: 0.8rem;
+    }
+    .header-filter {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .header-filter {
+        width: 50%;
+    }
 }

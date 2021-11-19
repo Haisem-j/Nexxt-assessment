@@ -10,7 +10,7 @@ const ChartContainer = ({ data, keys }) => {
                 data={data}
                 keys={keys}
                 indexBy="user"
-                margin={{  bottom: 50, left: 50 }}
+                margin={{  bottom: 50, left: 50, top: 10 }}
                 padding={0.3}
                 valueScale={{ type: 'linear' }}
                 indexScale={{ type: 'band', round: true }}
