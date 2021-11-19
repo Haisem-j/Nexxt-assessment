@@ -58,10 +58,17 @@ export const retrievePhotos = async (albums) => {
         let photos = await response.json()
         let albumCache = {}
         
+        /**
+         * Adding each album to album cache and setting to 0
+         *  {
+         *      id: 0    
+         *  }
+         */
         albums.forEach(album =>{
             albumCache[album.id] = 0;
         })
 
+        // Loops through photo array and keeps track via album cache
         photos.forEach(photo =>{
             if(albumCache[photo.albumId] !== undefined){
                 albumCache[photo.albumId] = albumCache[photo.albumId] + 1;
